@@ -29,7 +29,7 @@ int main(void) {
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &consoleInfo);
     int initialColor = consoleInfo.wAttributes;
 
-    int state, ansiColor, multiplication, pos, winColor, winIntensity = -1;
+    int state, ansiColor, multiplication, pos, winColor, winIntensity = W_INTENSITY;
     int colors[] = {-1,-1};
     int colorPos = 1;
     int ch;
